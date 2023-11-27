@@ -360,8 +360,6 @@ public class Bot {
                 getModuleManager().enableModule(new FishingModule(savedLootHistory));
                 getModuleManager().enableModule(new ChatProxyModule());
 
-                if (getConfig().isStartTextEnabled())
-                    getModuleManager().enableModule(new ChatCommandModule());
 
                 if (getConfig().isWebHookEnabled())
                     getModuleManager().enableModule(new DiscordModule());

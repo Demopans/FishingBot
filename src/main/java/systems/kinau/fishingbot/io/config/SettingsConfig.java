@@ -79,9 +79,6 @@ public class SettingsConfig implements Config {
     @Property(key = "announces.announce-lvl-up", description = "config-announces-announce-lvl-up") private boolean announceLvlUp = true;
     @Property(key = "announces.announce-lvl-up-text", description = "config-announces-announce-lvl-up-text") private String announceLvlUpText = "I am level %lvl% now";
 
-    @Property(key = "start-text.enabled", description = "config-start-text-enabled") private boolean startTextEnabled = true;
-    @Property(key = "start-text.text", description = "config-start-text-text") private List<String> startText = Arrays.asList("", "");
-
     @Property(key = "misc.stucking-fix-enabled", description = "config-misc-stucking-fix-enabled") private boolean stuckingFixEnabled = true;
     @Property(key = "misc.prevent-rod-breaking", description = "config-misc-prevent-rod-breaking") private boolean preventRodBreaking = true;
     @Property(key = "misc.disable-rod-checking", description = "config-misc-disable-rod-checking") private boolean disableRodChecking = false;

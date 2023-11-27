@@ -60,13 +60,6 @@ public class ClientDefaultsModule extends Module implements Listener {
                 Thread.sleep(1500);
             } catch (InterruptedException ignore) { }
 
-            // Send start texts
-            if (FishingBot.getInstance().getCurrentBot().getConfig().isStartTextEnabled()) {
-                FishingBot.getInstance().getCurrentBot().getConfig().getStartText().forEach(s -> {
-                    FishingBot.getInstance().getCurrentBot().runCommand(s, true, new ConsoleCommandExecutor());
-                });
-            }
-
             // Start position updates
             startPositionUpdate(FishingBot.getInstance().getCurrentBot().getNet());
         }).start();
